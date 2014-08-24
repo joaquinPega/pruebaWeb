@@ -29,7 +29,7 @@ public class BDServlet extends HttpServlet {
 		u.setNombre("Joaquin");
 		u.setApellido("Pega");
 		u.setDni(33653285);
-		session.save(u);
+		session.delete(u);
 		session.getTransaction().commit();
 		resp.getWriter().write("Se creo un objeto en la bd");
 	}
